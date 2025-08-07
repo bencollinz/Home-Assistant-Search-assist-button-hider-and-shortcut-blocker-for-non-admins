@@ -6,6 +6,7 @@ This is not really giving you a secured Home Assistant, but it is good enough fo
 Install:
 
 Copy hide-search.js to /config/www/
+
 The config directory is the place where your configuration.yaml for home assistant is.
 If there is no www directory, just add it.
 
