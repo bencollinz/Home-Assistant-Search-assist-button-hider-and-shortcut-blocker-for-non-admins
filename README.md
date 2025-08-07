@@ -3,20 +3,20 @@ This will hide the search button and block the "e" and "d" for users that are no
 
 This is not really giving you a secured Home Assistant, but it is good enough for use with kids.
 
-Install:
+<p>Install:</p>
 
-Copy hide-search.js to /config/www/
+<p>Copy hide-search.js to /config/www/</p>
 
-The config directory is the place where your configuration.yaml for home assistant is.
-If there is no www directory, just add it.
+<p>The config directory is the place where your configuration.yaml for home assistant is.</p>
+<p>If there is no www directory, just add it.</p>
 
-Add it as a frontend resource:
-Settings->Dashboards
-On the top right click the 3 dots and click Resources.
-Click Add resource
+<p>Add it as a frontend resource:</p>
+<p>Settings->Dashboards</p>
+<p>On the top right click the 3 dots and click Resources.</p>
+<p>Click Add resource</p>
 
-Select Javascript module
-put in url:  /local/hide-search.js
-Click create.
+<p>Select Javascript module</p>
+<p>put in url:  /local/hide-search.js</p>
+<p>Click create.</p>
 
-If it does not seem to work, clear your browser cache.
+<p>If it does not seem to work, clear your browser cache.</p>
