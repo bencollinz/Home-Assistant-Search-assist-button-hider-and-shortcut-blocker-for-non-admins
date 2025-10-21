@@ -1,7 +1,7 @@
-# Home-Assistant-Search-button-hider-and-shortcut-blocker-for-non-admins
-This will hide the search button and block the "e" and "d" for users that are not admin.
+#**Home-Assistant-Search-assist-button-hider-and-shortcut-blocker-for-non-admins**
 
-This is not really giving you a secured Home Assistant, but it is good enough for use with kids.
+This will hide the search/assist buttons in the header and block the "e","d" and "a" keys for users that are not admin.
+
 
 <p>Install:</p>
 
