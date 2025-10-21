@@ -12,22 +12,26 @@ function hideSearchIconAndBlockKeys() {
     const header = root.shadowRoot.querySelector(".header");
     const iconButtons = header.querySelectorAll("ha-icon-button");
 
+    const blockedPaths = ["M9.5,3A6.5", "M9,22A1,1"];
+
     iconButtons.forEach((btn) => {
       const svg = btn.shadowRoot?.querySelector("ha-svg-icon");
       const path = svg?.shadowRoot?.querySelector("path");
-      if (path && path.getAttribute("d")?.startsWith("M9.5,3A6.5")) {
+      const d = path?.getAttribute("d");
+  
+      if (blockedPaths.some(prefix => d?.startsWith(prefix))) {
         btn.style.display = "none";
         btn.disabled = true;
         btn.setAttribute("aria-hidden", "true");
-        console.log("Search icon hidden for non-admin.");
+        console.log(`Hidden icon with path: ${d.slice(0,10)}...`);
       }
     });
 
-    // Block keys e and d
+    // Block keys e, d and a
     document.addEventListener(
       "keydown",
       (event) => {
-        const blocked = ["e", "d"];
+        const blocked = ["e", "d", "a"];
         if (
           blocked.includes(event.key.toLowerCase()) &&
           !event.ctrlKey &&
